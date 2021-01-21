@@ -27,8 +27,12 @@
                     <version>3.2</version>
                     <configuration>
                         <!-- put your configurations here -->
-                        <source>1.8</source>
-                        <target>1.8</target>
+                        <source>11</source>
+                        <target>11</target>
+                        <compilerArgs>
+                            <arg>--add-exports</arg>
+                            <arg>java.sql.rowset/com.sun.rowset=ALL-UNNAMED</arg>
+                        </compilerArgs>
                     </configuration>
                 </plugin>
             </plugins>
